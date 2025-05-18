@@ -10,7 +10,7 @@ The code is based on the implementation of [Neural Anisotropy Directions](https:
 In this paper, we propose the *geometric invariance hypothesis (GIH)*, which argues that the input space curvature of a neural network remains invariant under transformation in certain architecture-dependent directions during training. We investigate a simple, non-linear binary classification problem residing on a plane in a high dimensional space and observe that—unlike MLPs—ResNets fail to generalize depending on the orientation of the plane. Motivated by this example, we define a neural network's **average geometry** and **average geometry evolution** as compact architecture-dependent summaries of the model's input-output geometry and its evolution during training. By investigating the average geometry evolution at initialization, we discover that the geometry of a neural network evolves according to the data covariance projected onto its average geometry. This means that the geometry only changes in a subset of the input space when the average geometry is low-rank, such as in ResNets. This causes an architecture-dependent invariance property in the input space curvature, which we dub GIH. Finally, we present extensive experimental results to observe the consequences of GIH and how it relates to generalization in neural networks.
 
 ![Geometric Invariance Hypothesis in
-ResNet.](geometry_evolution_illustration_v3.pdf)
+ResNet.](geometry_evolution_illustration_v3.jpg)
 
 ## Requirements
 ```
